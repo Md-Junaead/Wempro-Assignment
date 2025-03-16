@@ -1,13 +1,13 @@
 // 5. VALIDATION IMPROVEMENTS (lib/widgets/text_input_field.dart)
+import 'package:assignment/models/attribute.dart';
+import 'package:assignment/provider/form_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../models/attribute.dart';
-import '../providers/form_provider.dart';
 
 class TextInputField extends StatelessWidget {
   final Attribute attribute;
 
-  const TextInputField({required this.attribute});
+  const TextInputField({super.key, required this.attribute});
 
   @override
   Widget build(BuildContext context) {

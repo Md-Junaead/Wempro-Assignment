@@ -1,13 +1,13 @@
 // 4. PERFECT CHECKBOX IMPLEMENTATION (lib/widgets/checkbox_group.dart)
+import 'package:assignment/models/attribute.dart';
+import 'package:assignment/provider/form_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../models/attribute.dart';
-import '../providers/form_provider.dart';
 
 class CheckboxGroup extends StatelessWidget {
   final Attribute attribute;
 
-  const CheckboxGroup({required this.attribute});
+  const CheckboxGroup({super.key, required this.attribute});
 
   @override
   Widget build(BuildContext context) {

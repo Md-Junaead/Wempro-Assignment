@@ -1,10 +1,19 @@
 // 3. COMPLETE FORM SCREEN (lib/screens/form_screen.dart)
+import 'package:assignment/models/attribute.dart';
+import 'package:assignment/provider/form_provider.dart';
+import 'package:assignment/screens/results_screen.dart';
+import 'package:assignment/widgets/checkbox_group.dart';
+import 'package:assignment/widgets/dropdown_field.dart';
+import 'package:assignment/widgets/radio_field.dart';
+import 'package:assignment/widgets/text_input_field.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/form_provider.dart';
 
 class FormScreen extends StatefulWidget {
+  const FormScreen({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _FormScreenState createState() => _FormScreenState();
 }
 
